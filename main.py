@@ -1,6 +1,7 @@
-import sys
-from Tkinter import *
-import tkFont
+
+from tkinter import *
+import tkinter.font as font
+#import tkFont
 from tools import *
 
 
@@ -40,7 +41,7 @@ class Chess:
                 l = self.w.create_text((row + 0.5) * square_size,
                                        (col + 0.5) * square_size,
                                        fill='black',
-                                       font=tkFont.Font(size=70),
+                                       font=font.Font(size=70),
                                        text=init_board[row][col])
                 self.squares[row][col] = s
                 self.locations[row][col] = l
